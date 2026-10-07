@@ -2,4 +2,5 @@
     <string name="app_name">INF</string>
     <string name="app_description">Android 开发者实验台</string>
     <string name="back">返回</string>
+    <string name="empty_topic">这个主题下还没有实验</string>
 </resources>
