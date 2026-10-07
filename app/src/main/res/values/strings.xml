@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">INF</string>
+    <string name="app_description">Android 开发者实验台</string>
+    <string name="back">返回</string>
+</resources>
