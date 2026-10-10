@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.uirender.custom_view
+package com.josense.inf.topic.uirender.custom_view
 
 import android.content.Context
 import android.graphics.Canvas

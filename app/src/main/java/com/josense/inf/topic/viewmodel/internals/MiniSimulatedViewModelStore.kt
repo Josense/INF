@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.viewmodel.internals
+package com.josense.inf.topic.viewmodel.internals
 
 class MiniSimulatedViewModelStore {
     private val storeMap = HashMap<String, MiniSimulatedViewModel>()

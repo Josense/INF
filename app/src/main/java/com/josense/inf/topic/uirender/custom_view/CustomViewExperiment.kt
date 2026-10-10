@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.uirender.custom_view
+package com.josense.inf.topic.uirender.custom_view
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.josense.inf.data.Experiment
 import com.josense.inf.data.ExperimentTopic
+import com.josense.inf.topic.uirender.custom_view.CustomViewExperimentPage
 
 
 val CustomViewExperiment = Experiment(
@@ -26,12 +27,14 @@ fun CustomViewExperimentPage() {
     Column {
         Box(modifier = Modifier.width(500.dp).height(500.dp)) {
             AndroidView(factory = { context ->
-                AnimatedCircleView(context = context)
+                _root_ide_package_.com.josense.inf.topic.uirender.custom_view.AnimatedCircleView(
+                    context = context
+                )
             }, modifier = Modifier.wrapContentHeight().fillMaxWidth())
         }
 
         AndroidView(factory = { context ->
-            AnimatedCircleView(context = context)
+            _root_ide_package_.com.josense.inf.topic.uirender.custom_view.AnimatedCircleView(context = context)
         }, modifier = Modifier.wrapContentHeight().fillMaxWidth())
     }
 

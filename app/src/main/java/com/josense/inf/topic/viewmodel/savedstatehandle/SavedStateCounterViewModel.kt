@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.viewmodel.savedstatehandle
+package com.josense.inf.topic.viewmodel.savedstatehandle
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel

@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.compose.basiclayout
+package com.josense.inf.topic.compose.basiclayout
 
 import android.util.Log
 import androidx.compose.foundation.background
@@ -39,6 +39,6 @@ fun RowColumnDemo(modifier: Modifier = Modifier) {
 @Composable
 fun RowColumnDemoPreview() {
     INFTheme {
-        RowColumnDemo()
+        _root_ide_package_.com.josense.inf.topic.compose.basiclayout.RowColumnDemo()
     }
 }

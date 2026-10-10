@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.viewmodel.internals
+package com.josense.inf.topic.viewmodel.internals
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.compose.basiclayout
+package com.josense.inf.topic.compose.basiclayout
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -57,6 +57,6 @@ fun FlowDemo(modifier: Modifier = Modifier) {
 @Composable
 fun FlowDemoPreview() {
     INFTheme {
-        FlowDemo()
+        _root_ide_package_.com.josense.inf.topic.compose.basiclayout.FlowDemo()
     }
 }

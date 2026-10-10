@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.compose.basiclayout
+package com.josense.inf.topic.compose.basiclayout
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -46,6 +46,6 @@ fun BoxDemo(modifier: Modifier = Modifier) {
 @Composable
 fun BoxDemoPreview() {
     INFTheme() {
-        BoxDemo()
+        _root_ide_package_.com.josense.inf.topic.compose.basiclayout.BoxDemo()
     }
 }

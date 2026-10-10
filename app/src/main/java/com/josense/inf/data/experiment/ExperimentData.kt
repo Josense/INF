@@ -1,14 +1,14 @@
 package com.josense.inf.data.experiment
 
-import com.josense.inf.ui.topic.compose.basiclayout.ComposeBasicLayoutBoxExperiment
-import com.josense.inf.ui.topic.compose.basiclayout.ComposeBasicLayoutFlowExperiment
-import com.josense.inf.ui.topic.compose.basiclayout.ComposeBasicLayoutRowColumnExperiment
-import com.josense.inf.ui.topic.ipc.broadcast.ImplicitBroadcastsExperiment
-import com.josense.inf.ui.topic.uirender.custom_compose.CustomComposeExperiment
-import com.josense.inf.ui.topic.uirender.custom_view.CustomViewExperiment
-import com.josense.inf.ui.topic.viewmodel.internals.ViewModelInternalsExperiment
-import com.josense.inf.ui.topic.viewmodel.lifecycles.ViewModelLifecycleExperiment
-import com.josense.inf.ui.topic.viewmodel.savedstatehandle.ViewModelSavedStateHandleExperiment
+import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutBoxExperiment
+import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutFlowExperiment
+import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutRowColumnExperiment
+import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperiment
+import com.josense.inf.topic.uirender.custom_compose.CustomComposeExperiment
+import com.josense.inf.topic.uirender.custom_view.CustomViewExperiment
+import com.josense.inf.topic.viewmodel.internals.ViewModelInternalsExperiment
+import com.josense.inf.topic.viewmodel.lifecycles.ViewModelLifecycleExperiment
+import com.josense.inf.topic.viewmodel.savedstatehandle.ViewModelSavedStateHandleExperiment
 
 
 

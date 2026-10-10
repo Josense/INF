@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.viewmodel.lifecycles
+package com.josense.inf.topic.viewmodel.lifecycles
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf

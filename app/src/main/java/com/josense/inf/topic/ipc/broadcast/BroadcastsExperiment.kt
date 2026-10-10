@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.ipc.broadcast
+package com.josense.inf.topic.ipc.broadcast
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -18,6 +18,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import com.josense.inf.data.Experiment
 import com.josense.inf.data.ExperimentTopic
+import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperimentPage
 
 
 val ImplicitBroadcastsExperiment = Experiment(

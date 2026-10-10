@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.viewmodel.internals
+package com.josense.inf.topic.viewmodel.internals
 
 import android.app.Activity
 import android.content.Context
@@ -22,16 +22,16 @@ fun Context.findActivity(): Activity? {
 }
 
 class MiniSimulatedViewModelProvider(
-    private val viewModelStore: MiniSimulatedViewModelStore,
-    private val viewModelFactory: MiniSimulatedViewModelFactory = DefaultMiniSimulatedViewModelFactory()
+    private val viewModelStore: com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelStore,
+    private val viewModelFactory: com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelFactory = _root_ide_package_.com.josense.inf.topic.viewmodel.internals.DefaultMiniSimulatedViewModelFactory()
 ) {
-    fun <T : MiniSimulatedViewModel> getViewModel(modelClass: Class<T>): T {
+    fun <T : com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModel> getViewModel(modelClass: Class<T>): T {
         return getViewModel(modelClass, viewModelFactory)
     }
 
-    fun <T : MiniSimulatedViewModel> getViewModel(
+    fun <T : com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModel> getViewModel(
         modelClass: Class<T>,
-        factory: MiniSimulatedViewModelFactory
+        factory: com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelFactory
     ): T {
         val existing = viewModelStore.get(modelClass)
         if (existing != null && modelClass.isInstance(existing)) {
@@ -44,11 +44,11 @@ class MiniSimulatedViewModelProvider(
 }
 
 /** 全局或模块内管理的 NavBackStackEntry -> MiniSimulatedViewModelStore 映射表 */
-private val navEntryStores = HashMap<String, MiniSimulatedViewModelStore>()
+private val navEntryStores = HashMap<String, com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelStore>()
 
 class NavEntryMiniViewModelStoreOwner(
-    override val miniViewModelStore: MiniSimulatedViewModelStore
-) : MiniSimulatedViewModelStoreOwner
+    override val miniViewModelStore: com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelStore
+) : com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelStoreOwner
 
 /**
  * 将 [MiniSimulatedViewModelStore] 绑定到 [NavBackStackEntry] 的真实 [Lifecycle] 上。

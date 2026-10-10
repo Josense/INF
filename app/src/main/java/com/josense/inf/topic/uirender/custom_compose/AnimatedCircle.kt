@@ -1,4 +1,4 @@
-package com.josense.inf.ui.topic.uirender.custom_compose
+package com.josense.inf.topic.uirender.custom_compose
 
 import android.util.Log
 import androidx.compose.animation.animateColor
