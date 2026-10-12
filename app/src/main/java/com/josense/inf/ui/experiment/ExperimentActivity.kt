@@ -70,7 +70,7 @@ class ExperimentActivity : ComponentActivity() {
                             .padding(innerPadding),
                         contentAlignment = Alignment.Center
                     ) {
-                        if (experiment != null) {
+                        if (experiment?.page != null) {
                             experiment.page()
                         } else {
                             val topicName = intent.getStringExtra(Experiment.LAUNCH_PARAM_TOPIC_NAME)
