@@ -46,6 +46,7 @@ import com.josense.inf.ui.components.EmptyScreen
 import com.josense.inf.ui.experiment.ExperimentActivity
 import com.josense.inf.ui.theme.INFTheme
 import kotlinx.coroutines.launch
+import kotlin.math.exp
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -148,16 +149,16 @@ fun HomePage() {
                                         style = MaterialTheme.typography.bodyLarge,
                                     )
 
+
                                     Spacer(modifier = Modifier.padding(4.dp))
                                     Text(
-                                        text = "这是一段实验描述，描述发生了什么",
+                                        text = experiment.description.takeIf { it.isNotBlank() }
+                                            ?: stringResource(R.string.experiment_no_description),
                                         style = MaterialTheme.typography.bodySmall,
                                     )
+
                                 }
                             }
-
-
-
                         }
                     }
                 }
