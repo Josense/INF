@@ -6,11 +6,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.twotone.Extension
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.josense.inf.data.experiment.Experiment
-import com.josense.inf.data.experiment.ExperimentsData
 import com.josense.inf.data.PageType
 import com.josense.inf.data.tools.Tool.Companion.LAUNCH_PARAM_TOOL_ID
-import com.josense.inf.tools.activitydetect.activityDetectTool
 import com.josense.inf.ui.tool.ToolActivity
 
 data class Tool(

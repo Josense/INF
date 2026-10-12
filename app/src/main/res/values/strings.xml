@@ -2,7 +2,22 @@
     <string name="app_name">INF</string>
     <string name="app_description">Android 开发者实验台</string>
     <string name="back">返回</string>
+
     <string name="empty_topic">这个主题下还没有实验</string>
     <string name="experiment_no_description">这个实验没有添加任何描述</string>
+
     <string name="tools_no_description">这个工具没有添加任何描述</string>
+
+    <string name="floating_window_permission_granted">悬浮窗权限已开启</string>
+    <string name="floating_window_permission_not_granted">去开启悬浮窗权限</string>
+    <string name="usage_access_permission_granted">使用情况访问权限已开启</string>
+    <string name="usage_access_permission_not_granted">去开启使用情况访问权限</string>
+    <string name="enable_floating_window">开启悬浮窗显示</string>
+    <string name="close_floating_window">关闭悬浮窗显示</string>
+    <string name="detecting_activity">正在检测Activity…</string>
+    <string name="detecting_error">没有检测到Activity</string>
+    <string name="detecting_result">Package: %1$s\n\nActivity: %2$s</string>
+    <string name="long_press_copy_click_collapse">长按复制，点击收起</string>
+    <string name="current_activity_info">"当前Activity信息"</string>
+
 </resources>

@@ -22,11 +22,7 @@ fun EmptyScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(
-            painter = painterResource(id = R.drawable.empty_placeholder),
-            contentDescription = description,
-            modifier = Modifier.size(120.dp)
-        )
+        BrandIcon(120.dp, description)
         Text(text = description)
     }
 }

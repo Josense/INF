@@ -23,7 +23,7 @@ fun ContentWithEmptyStateComponent(
             .padding(innerPadding),
         contentAlignment = Alignment.Center
     ) {
-        if (isEmptyState()) {
+        if (isEmptyState().not()) {
             content()
         } else {
             EmptyScreen(description = emptyStateDescription)
