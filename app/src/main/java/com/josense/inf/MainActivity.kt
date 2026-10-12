@@ -117,7 +117,8 @@ fun HomePage() {
             val currentTopicExperiments = ExperimentsData[ExperimentTopic.entries[currentTopicIndex].topicName] ?: mapOf()
             if (currentTopicExperiments.isNotEmpty()) {
                 LazyColumn(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.fillMaxSize()
+                        .background(MaterialTheme.colorScheme.background),
                 ) {
                     items(
                         currentTopicExperiments.entries.size
@@ -139,7 +140,7 @@ fun HomePage() {
                                     imageVector = experiment.icon,
                                     contentDescription = experiment.name,
                                     modifier = Modifier.padding(12.dp),
-                                    tint = MaterialTheme.colorScheme.outline,
+                                    tint = MaterialTheme.colorScheme.tertiary,
                                 )
                                 Column {
                                     Text(
