@@ -3,13 +3,13 @@ package com.josense.inf.data.experiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutBoxExperiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutFlowExperiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutRowColumnExperiment
+import com.josense.inf.topic.crossplatform.sdl3.sdl3Experiment
 import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperiment
 import com.josense.inf.topic.uirender.custom_compose.CustomComposeExperiment
 import com.josense.inf.topic.uirender.custom_view.CustomViewExperiment
 import com.josense.inf.topic.viewmodel.internals.ViewModelInternalsExperiment
 import com.josense.inf.topic.viewmodel.lifecycles.ViewModelLifecycleExperiment
 import com.josense.inf.topic.viewmodel.savedstatehandle.ViewModelSavedStateHandleExperiment
-
 
 
 val ExperimentsData: Map<String, Map<String, Experiment>> = mapOf(
@@ -31,6 +31,7 @@ val ExperimentsData: Map<String, Map<String, Experiment>> = mapOf(
         ImplicitBroadcastsExperiment.id to ImplicitBroadcastsExperiment,
     ),
     ExperimentTopic.CrossPlatform.topicName to mapOf(
+        sdl3Experiment.id to sdl3Experiment
     )
 )
 

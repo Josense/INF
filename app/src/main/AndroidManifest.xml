@@ -38,6 +38,11 @@
         <service android:name=".tools.activitydetect.FloatingWindowService"
             android:enabled="true"
             android:exported="false" />
+
+        <activity
+            android:name=".topic.crossplatform.sdl3.SDLExperimentActivity"
+            android:configChanges="layoutDirection|locale|grammaticalGender|fontScale|fontWeightAdjustment|orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:exported="false" />
     </application>
 
 </manifest>
