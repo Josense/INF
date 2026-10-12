@@ -10,9 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import com.josense.inf.data.Experiment
-import com.josense.inf.data.ExperimentTopic
-import com.josense.inf.topic.uirender.custom_view.CustomViewExperimentPage
+import com.josense.inf.data.experiment.Experiment
+import com.josense.inf.data.experiment.ExperimentTopic
 
 
 val CustomViewExperiment = Experiment(

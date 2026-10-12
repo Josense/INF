@@ -20,8 +20,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navigation
-import com.josense.inf.data.Experiment
-import com.josense.inf.data.ExperimentTopic
+import com.josense.inf.data.experiment.Experiment
+import com.josense.inf.data.experiment.ExperimentTopic
 import kotlinx.serialization.Serializable
 
 @Serializable

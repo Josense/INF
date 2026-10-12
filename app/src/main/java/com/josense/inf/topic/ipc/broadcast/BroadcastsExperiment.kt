@@ -16,10 +16,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
-import com.josense.inf.data.Experiment
-import com.josense.inf.data.ExperimentTopic
-import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperimentPage
-
+import com.josense.inf.data.experiment.Experiment
+import com.josense.inf.data.experiment.ExperimentTopic
 
 val ImplicitBroadcastsExperiment = Experiment(
     id = "implicit_broadcasts",

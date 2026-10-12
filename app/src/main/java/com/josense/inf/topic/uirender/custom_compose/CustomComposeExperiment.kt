@@ -8,10 +8,8 @@ import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.josense.inf.data.Experiment
-import com.josense.inf.data.ExperimentTopic
-import com.josense.inf.topic.uirender.custom_compose.CustomComposeExperimentPage
-
+import com.josense.inf.data.experiment.Experiment
+import com.josense.inf.data.experiment.ExperimentTopic
 val CustomComposeExperiment = Experiment(
     id = "custom_compose",
     name = "自定义 Compose 实验",
