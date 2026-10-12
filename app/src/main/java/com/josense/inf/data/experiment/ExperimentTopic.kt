@@ -4,6 +4,7 @@ enum class ExperimentTopic(val topicName: String) {
     Compose("Compose"),
     ViewModel("ViewModel"),
     UiSystem("UiSystem"),
-    IPC("IPC")
+    IPC("IPC"),
+    CrossPlatform("CrossPlatform"),
     ;
 }
