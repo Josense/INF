@@ -24,6 +24,7 @@ import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperimentPage
 val ImplicitBroadcastsExperiment = Experiment(
     id = "implicit_broadcasts",
     name = "隐式广播实验",
+    description = "接收系统电量/充电状态变量广播",
     page = ::ImplicitBroadcastsExperimentPage,
     topic = ExperimentTopic.IPC,
 )
@@ -60,7 +61,7 @@ fun ImplicitBroadcastsExperimentPage() {
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            val stickIntent =context.registerReceiver(receiver, filter, Context.RECEIVER_EXPORTED)
+            val stickIntent = context.registerReceiver(receiver, filter, Context.RECEIVER_EXPORTED)
             receiver.onReceive(context, stickIntent)
         }
         onDispose {

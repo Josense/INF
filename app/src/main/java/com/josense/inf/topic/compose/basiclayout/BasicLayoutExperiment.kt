@@ -8,21 +8,24 @@ import com.josense.inf.topic.compose.basiclayout.RowColumnDemo
 
 val ComposeBasicLayoutBoxExperiment = Experiment(
     id = "compose_basic_layout_box",
-    name = "Compose 基本布局实验 - Box",
+    name = "Box",
+    description = "Compose 基本布局实验",
     page = ::BoxDemo,
     topic = ExperimentTopic.Compose,
 )
 
 val ComposeBasicLayoutRowColumnExperiment = Experiment(
     id = "compose_basic_layout_row_column",
-    name = "Compose 基本布局实验 - Row & Column",
+    name = "Row & Column",
+    description = "Compose 基本布局实验",
     page = ::RowColumnDemo,
     topic = ExperimentTopic.Compose,
 )
 
 val ComposeBasicLayoutFlowExperiment = Experiment(
     id = "compose_basic_layout_flow",
-    name = "Compose 基本布局实验 - Flow",
+    name = "Flow",
+    description = "Compose 基本布局实验",
     page = ::FlowDemo,
     topic = ExperimentTopic.Compose,
 )

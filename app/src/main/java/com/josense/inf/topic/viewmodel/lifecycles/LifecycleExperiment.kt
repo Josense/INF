@@ -49,6 +49,7 @@ data object ScreenBAndCGraph
 val ViewModelLifecycleExperiment = Experiment(
     id = "viewModel_lifecycles",
     name = "ViewModel 生命周期实验",
+    description = "VM如何在配置变更是保存数据",
     page = ::ViewModelLifecyclesExperimentPage,
     topic = ExperimentTopic.ViewModel,
 )

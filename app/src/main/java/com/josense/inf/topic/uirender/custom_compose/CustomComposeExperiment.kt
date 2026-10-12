@@ -15,6 +15,7 @@ import com.josense.inf.topic.uirender.custom_compose.CustomComposeExperimentPage
 val CustomComposeExperiment = Experiment(
     id = "custom_compose",
     name = "自定义 Compose 实验",
+    description = "Composition / (Measurement + Layout) / Drawing",
     page = ::CustomComposeExperimentPage,
     topic = ExperimentTopic.UiSystem,
 )
@@ -23,9 +24,9 @@ val CustomComposeExperiment = Experiment(
 fun CustomComposeExperimentPage() {
     Column {
         Box(modifier = Modifier.width(500.dp).height(500.dp)) {
-            _root_ide_package_.com.josense.inf.topic.uirender.custom_compose.AnimatedCircle(modifier = Modifier.wrapContentSize())
+            AnimatedCircle(modifier = Modifier.wrapContentSize())
         }
 
-        _root_ide_package_.com.josense.inf.topic.uirender.custom_compose.AnimatedCircle(modifier = Modifier.wrapContentSize())
+        AnimatedCircle(modifier = Modifier.wrapContentSize())
     }
 }

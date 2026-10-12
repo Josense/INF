@@ -18,6 +18,7 @@ import com.josense.inf.topic.uirender.custom_view.CustomViewExperimentPage
 val CustomViewExperiment = Experiment(
     id = "custom_view",
     name = "自定义 View 实验",
+    description = "Measure / Layout / Draw",
     page = ::CustomViewExperimentPage,
     topic = ExperimentTopic.UiSystem,
 )
@@ -27,14 +28,14 @@ fun CustomViewExperimentPage() {
     Column {
         Box(modifier = Modifier.width(500.dp).height(500.dp)) {
             AndroidView(factory = { context ->
-                _root_ide_package_.com.josense.inf.topic.uirender.custom_view.AnimatedCircleView(
+                AnimatedCircleView(
                     context = context
                 )
             }, modifier = Modifier.wrapContentHeight().fillMaxWidth())
         }
 
         AndroidView(factory = { context ->
-            _root_ide_package_.com.josense.inf.topic.uirender.custom_view.AnimatedCircleView(context = context)
+            AnimatedCircleView(context = context)
         }, modifier = Modifier.wrapContentHeight().fillMaxWidth())
     }
 

@@ -58,6 +58,7 @@ data object ScreenBAndCGraph
 val ViewModelSavedStateHandleExperiment = Experiment(
     id = "viewModel_saved_state_handle",
     name = "ViewModel SavedStateHandle 实验",
+    description = "使用SavedStateHandle保存重建时需要恢复的状态信息",
     page = ::ViewModelSavedStateHandleExperimentPage,
     topic = ExperimentTopic.ViewModel,
 )

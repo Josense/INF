@@ -41,7 +41,8 @@ data object ScreenBAndCGraph
 
 val ViewModelInternalsExperiment = Experiment(
     id = "viewModel_internals",
-    name = "ViewModel 原理实验 - 最小模拟",
+    name = "ViewModel 原理实验",
+    description = "模拟手搓一个最简单的 ViewModel",
     page = ::ViewModelInternalsExperimentPage,
     topic = ExperimentTopic.ViewModel,
 )
