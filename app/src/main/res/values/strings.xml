@@ -4,4 +4,5 @@
     <string name="back">返回</string>
     <string name="empty_topic">这个主题下还没有实验</string>
     <string name="experiment_no_description">这个实验没有添加任何描述</string>
+    <string name="tools_no_description">这个工具没有添加任何描述</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.josense.inf.data
+package com.josense.inf.data.experiment
 
 import com.josense.inf.ui.components.EmptyScreen
 

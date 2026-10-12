@@ -1,4 +1,4 @@
-package com.josense.inf.data
+package com.josense.inf.data.experiment
 
 import android.content.Intent
 import kotlin.collections.get

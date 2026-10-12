@@ -27,7 +27,10 @@
             android:name=".ui.experiment.ExperimentActivity"
             android:theme="@style/Theme.INF"
             android:windowSoftInputMode="adjustResize">
-
+        </activity>
+        <activity android:name=".ui.tool.ToolActivity"
+            android:theme="@style/Theme.INF"
+            android:windowSoftInputMode="adjustResize">
         </activity>
     </application>
 
