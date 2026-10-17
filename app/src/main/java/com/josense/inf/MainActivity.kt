@@ -17,12 +17,14 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.josense.inf.ui.page.home.HomePage
 import com.josense.inf.ui.page.home.HomeScreen
+import com.josense.inf.ui.page.home.HomeScreenGraph
 import com.josense.inf.ui.page.home.ToolPage
 import com.josense.inf.ui.page.home.homeBottomNavItems
 import com.josense.inf.ui.theme.INFTheme
@@ -62,16 +64,14 @@ class MainActivity : ComponentActivity() {
                                     label = {
                                         Text(screen.title)
                                     },
-                                    selected = currentRoute == screen.route,
+                                    selected = navBackStackEntry?.destination?.hasRoute(screen.route::class) == true,
                                     onClick = {
-                                        if (currentRoute != screen.route) {
-                                            navController.navigate(screen.route) {
-                                                popUpTo(navController.graph.startDestinationId) {
-                                                    saveState = true
-                                                }
-                                                launchSingleTop = true
-                                                restoreState = true
+                                        navController.navigate(screen.route) {
+                                            popUpTo(navController.graph.startDestinationId) {
+                                                saveState = true
                                             }
+                                            launchSingleTop = true
+                                            restoreState = true
                                         }
                                     }
                                 )
@@ -81,11 +81,11 @@ class MainActivity : ComponentActivity() {
                 ) { innerPadding ->
                     NavHost(
                         navController = navController,
-                        startDestination = HomeScreen.Home.route,
+                        startDestination = HomeScreenGraph.Home,
                         modifier = Modifier.padding(innerPadding)
                     ) {
-                        composable(HomeScreen.Home.route) { HomePage() }
-                        composable(HomeScreen.Tool.route) { ToolPage() }
+                        composable<HomeScreenGraph.Home> { HomePage() }
+                        composable<HomeScreenGraph.Tool> { ToolPage() }
                     }
                 }
             }
