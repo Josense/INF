@@ -39,6 +39,6 @@ fun RowColumnDemo(modifier: Modifier = Modifier) {
 @Composable
 fun RowColumnDemoPreview() {
     INFTheme {
-        _root_ide_package_.com.josense.inf.topic.compose.basiclayout.RowColumnDemo()
+        RowColumnDemo()
     }
 }

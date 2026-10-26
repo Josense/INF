@@ -22,16 +22,16 @@ fun Context.findActivity(): Activity? {
 }
 
 class MiniSimulatedViewModelProvider(
-    private val viewModelStore: com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelStore,
-    private val viewModelFactory: com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelFactory = _root_ide_package_.com.josense.inf.topic.viewmodel.internals.DefaultMiniSimulatedViewModelFactory()
+    private val viewModelStore: MiniSimulatedViewModelStore,
+    private val viewModelFactory: MiniSimulatedViewModelFactory = DefaultMiniSimulatedViewModelFactory()
 ) {
-    fun <T : com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModel> getViewModel(modelClass: Class<T>): T {
+    fun <T : MiniSimulatedViewModel> getViewModel(modelClass: Class<T>): T {
         return getViewModel(modelClass, viewModelFactory)
     }
 
-    fun <T : com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModel> getViewModel(
+    fun <T : MiniSimulatedViewModel> getViewModel(
         modelClass: Class<T>,
-        factory: com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelFactory
+        factory: MiniSimulatedViewModelFactory
     ): T {
         val existing = viewModelStore.get(modelClass)
         if (existing != null && modelClass.isInstance(existing)) {
@@ -44,11 +44,11 @@ class MiniSimulatedViewModelProvider(
 }
 
 /** 全局或模块内管理的 NavBackStackEntry -> MiniSimulatedViewModelStore 映射表 */
-private val navEntryStores = HashMap<String, com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelStore>()
+private val navEntryStores = HashMap<String, MiniSimulatedViewModelStore>()
 
 class NavEntryMiniViewModelStoreOwner(
-    override val miniViewModelStore: com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelStore
-) : com.josense.inf.topic.viewmodel.internals.MiniSimulatedViewModelStoreOwner
+    override val miniViewModelStore: MiniSimulatedViewModelStore
+) : MiniSimulatedViewModelStoreOwner
 
 /**
  * 将 [MiniSimulatedViewModelStore] 绑定到 [NavBackStackEntry] 的真实 [Lifecycle] 上。

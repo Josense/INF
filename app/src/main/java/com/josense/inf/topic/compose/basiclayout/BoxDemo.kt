@@ -46,6 +46,6 @@ fun BoxDemo(modifier: Modifier = Modifier) {
 @Composable
 fun BoxDemoPreview() {
     INFTheme() {
-        _root_ide_package_.com.josense.inf.topic.compose.basiclayout.BoxDemo()
+        BoxDemo()
     }
 }

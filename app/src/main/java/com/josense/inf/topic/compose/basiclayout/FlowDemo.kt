@@ -57,6 +57,6 @@ fun FlowDemo(modifier: Modifier = Modifier) {
 @Composable
 fun FlowDemoPreview() {
     INFTheme {
-        _root_ide_package_.com.josense.inf.topic.compose.basiclayout.FlowDemo()
+        FlowDemo()
     }
 }
