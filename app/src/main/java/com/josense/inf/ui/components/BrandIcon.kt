@@ -17,7 +17,7 @@ fun BrandIcon(
     description: String = stringResource(R.string.app_name)
 ) {
     Image(
-        painter = painterResource(id = R.drawable.empty_placeholder),
+        painter = painterResource(id = R.drawable.inf_empty),
         contentDescription = description,
         modifier = Modifier.size(size)
     )
