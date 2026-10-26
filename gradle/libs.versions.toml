@@ -12,6 +12,9 @@ navigationCompose = "2.10.2"
 kotzilla = "3.0.1"
 koin = "4.2.2"
 
+# 三方库
+enrichedMarkdown = "0.3.0"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -34,8 +37,10 @@ androidx-navigation-compose = { group = "androidx.navigation", name = "navigatio
 kotlin-parcelize-runtime = { module = "org.jetbrains.kotlin:kotlin-parcelize-runtime" }
 kotlin-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json" }
 
+#kotzilla
 kotzilla-sdk-compose = { group = "io.kotzilla", name = "kotzilla-sdk-compose", version.ref = "kotzilla" }
 
+# koin
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core" }
 koin-android = { module = "io.insert-koin:koin-android" }
@@ -43,6 +48,10 @@ koin-compose = { module = "io.insert-koin:koin-compose" }
 koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel" }
 koin-compose-viewmodel-navigation = { module = "io.insert-koin:koin-compose-viewmodel-navigation" }
 koin-ktor = { module = "io.insert-koin:koin-ktor" }
+
+# third-party libraries
+enriched-markdown-compose = { module = "com.swmansion.enriched.markdown:compose", version.ref = "enrichedMarkdown" }
+
 
 
 [plugins]

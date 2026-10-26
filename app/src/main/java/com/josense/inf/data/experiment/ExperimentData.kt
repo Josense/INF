@@ -4,6 +4,7 @@ import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutBoxExperiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutFlowExperiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutRowColumnExperiment
 import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperiment
+import com.josense.inf.topic.thirdpartylibrary.enrichedmarkdown.EnrichedMarkdownExperiment
 import com.josense.inf.topic.uirender.custom_compose.CustomComposeExperiment
 import com.josense.inf.topic.uirender.custom_view.CustomViewExperiment
 import com.josense.inf.topic.viewmodel.internals.ViewModelInternalsExperiment
@@ -29,6 +30,9 @@ val ExperimentsData: Map<String, Map<String, Experiment>> = mapOf(
     ),
     ExperimentTopic.IPC.topicName to mapOf(
         ImplicitBroadcastsExperiment.id to ImplicitBroadcastsExperiment,
+    ),
+    ExperimentTopic.ThirdPartyLibrary.topicName to mapOf(
+        EnrichedMarkdownExperiment.id to EnrichedMarkdownExperiment,
     ),
 )
 
