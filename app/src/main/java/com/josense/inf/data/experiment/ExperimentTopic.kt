@@ -5,6 +5,7 @@ enum class ExperimentTopic(val topicName: String) {
     ViewModel("ViewModel"),
     UiSystem("UiSystem"),
     IPC("IPC"),
+    CrossPlatform("CrossPlatform"),
     ThirdPartyLibrary("ThirdPartyLibrary"),
     ;
 }

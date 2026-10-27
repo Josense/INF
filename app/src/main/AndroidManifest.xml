@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".INFApplication"
@@ -38,6 +39,10 @@
         </activity>
         <service android:name=".tools.activitydetect.FloatingWindowService"
             android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".topic.crossplatform.rn.INFReactActivity"
             android:exported="false" />
     </application>
 

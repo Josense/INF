@@ -3,6 +3,7 @@ package com.josense.inf.data.experiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutBoxExperiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutFlowExperiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutRowColumnExperiment
+import com.josense.inf.topic.crossplatform.rn.ReactNativeExperiment
 import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperiment
 import com.josense.inf.topic.thirdpartylibrary.enrichedmarkdown.EnrichedMarkdownExperiment
 import com.josense.inf.topic.uirender.custom_compose.CustomComposeExperiment
@@ -30,6 +31,9 @@ val ExperimentsData: Map<String, Map<String, Experiment>> = mapOf(
     ),
     ExperimentTopic.IPC.topicName to mapOf(
         ImplicitBroadcastsExperiment.id to ImplicitBroadcastsExperiment,
+    ),
+    ExperimentTopic.CrossPlatform.topicName to mapOf(
+        ReactNativeExperiment.id to ReactNativeExperiment,
     ),
     ExperimentTopic.ThirdPartyLibrary.topicName to mapOf(
         EnrichedMarkdownExperiment.id to EnrichedMarkdownExperiment,

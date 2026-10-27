@@ -1,5 +1,6 @@
 [versions]
 agp = "9.4.1"
+
 coreKtx = "1.19.1"
 junit = "4.13.2"
 junitVersion = "1.3.0"
@@ -14,6 +15,9 @@ koin = "4.2.2"
 
 # 三方库
 enrichedMarkdown = "0.3.0"
+
+# react-native 集成
+brownfieldlib = "0.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -51,6 +55,9 @@ koin-ktor = { module = "io.insert-koin:koin-ktor" }
 
 # third-party libraries
 enriched-markdown-compose = { module = "com.swmansion.enriched.markdown:compose", version.ref = "enrichedMarkdown" }
+
+# react-native 集成
+inf-react-brownfieldlib = { module = "com.infreact:brownfieldlib", version.ref = "brownfieldlib" }
 
 
 

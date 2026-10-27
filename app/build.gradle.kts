@@ -37,6 +37,13 @@ android {
     buildFeatures {
         compose = true
     }
+
+    packaging {
+        jniLibs {
+            // Fix:ReactNative 集成和 EnrichedMarkdown 依赖造成的 so 库冲突问题
+            pickFirsts += "**/libc++_shared.so"
+        }
+    }
 }
 
 dependencies {
@@ -71,6 +78,9 @@ dependencies {
 
     // third-party libraries
     implementation(libs.enriched.markdown.compose)
+
+    // react-native 集成
+    implementation(libs.inf.react.brownfieldlib)
 
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
