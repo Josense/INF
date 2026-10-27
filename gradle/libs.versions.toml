@@ -15,9 +15,11 @@ koin = "4.2.2"
 
 # 三方库
 enrichedMarkdown = "0.3.0"
+kotlinFakerVersion = "1.16.0"
 
 # react-native 集成
 brownfieldlib = "0.1.0"
+material3AdaptiveNavigationSuite = "1.4.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -55,9 +57,11 @@ koin-ktor = { module = "io.insert-koin:koin-ktor" }
 
 # third-party libraries
 enriched-markdown-compose = { module = "com.swmansion.enriched.markdown:compose", version.ref = "enrichedMarkdown" }
+serpro69-kotlin-faker = { module = "io.github.serpro69:kotlin-faker", version.ref = "kotlinFakerVersion" }
 
 # react-native 集成
 inf-react-brownfieldlib = { module = "com.infreact:brownfieldlib", version.ref = "brownfieldlib" }
+androidx-compose-material3-adaptive-navigation-suite = { group = "androidx.compose.material3", name = "material3-adaptive-navigation-suite", version.ref = "material3AdaptiveNavigationSuite" }
 
 
 

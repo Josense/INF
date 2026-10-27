@@ -65,7 +65,8 @@ dependencies {
     // material icon
     implementation(libs.androidx.compose.material.icons.core)
     implementation(libs.androidx.compose.material.icons.extended)
-
+    //
+    implementation(libs.androidx.compose.material3.adaptive.navigation.suite)
     // koin
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.android)
@@ -77,7 +78,8 @@ dependencies {
     implementation(libs.kotzilla.sdk.compose)
 
     // third-party libraries
-    implementation(libs.enriched.markdown.compose)
+    implementation(libs.enriched.markdown.compose)  // markdown
+    implementation(libs.serpro69.kotlin.faker) // kotlin faker
 
     // react-native 集成
     implementation(libs.inf.react.brownfieldlib)

@@ -2,7 +2,10 @@ package com.josense.inf.data.experiment
 
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutBoxExperiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutFlowExperiment
+import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutLazyGridExperiment
+import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutLazyListExperiment
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutRowColumnExperiment
+import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutScaffoldExperiment
 import com.josense.inf.topic.crossplatform.rn.ReactNativeExperiment
 import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperiment
 import com.josense.inf.topic.thirdpartylibrary.enrichedmarkdown.EnrichedMarkdownExperiment
@@ -19,6 +22,9 @@ val ExperimentsData: Map<String, Map<String, Experiment>> = mapOf(
         ComposeBasicLayoutBoxExperiment.id to ComposeBasicLayoutBoxExperiment,
         ComposeBasicLayoutRowColumnExperiment.id to ComposeBasicLayoutRowColumnExperiment,
         ComposeBasicLayoutFlowExperiment.id to ComposeBasicLayoutFlowExperiment,
+        ComposeBasicLayoutLazyListExperiment.id to ComposeBasicLayoutLazyListExperiment,
+        ComposeBasicLayoutLazyGridExperiment.id to ComposeBasicLayoutLazyGridExperiment,
+        ComposeBasicLayoutScaffoldExperiment.id to ComposeBasicLayoutScaffoldExperiment,
     ),
     ExperimentTopic.ViewModel.topicName to mapOf(
         ViewModelLifecycleExperiment.id to ViewModelLifecycleExperiment,
