@@ -30,7 +30,7 @@ import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
-import androidx.compose.material3.adaptive.currentWindowAdaptiveInfo
+import androidx.compose.material3.adaptive.currentWindowAdaptiveInfoV2
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -68,7 +68,7 @@ fun WindowParamsDetectPage() {
     val statusBarHeightDp = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
     val navigationBarHeightDp = WindowInsets.navigationBars.asPaddingValues().calculateBottomPadding()
     val screenCorners = rememberScreenCornersSafe()
-    val windowSizeClass = currentWindowAdaptiveInfo().windowSizeClass
+    val windowSizeClass = currentWindowAdaptiveInfoV2().windowSizeClass
     val displayCutout = rememberDisplayCutoutDpBounds()
 
     BoxWithConstraints(
@@ -91,7 +91,7 @@ fun WindowParamsDetectPage() {
             text = "Window: $parentWidth x $parentHeight\n" +
                     "圆角:\nTopLeft:${screenCorners.topLeft}\nTopRight:${screenCorners.topRight}\n" +
                     "BottomLeft:${screenCorners.bottomLeft}\nBottomRight:${screenCorners.bottomRight}\n" +
-                    "windowSizeClass: \nwidth:${windowSizeClass.widthSizeClass}\nheight:${windowSizeClass.heightSizeClass}",
+                    "windowSizeClass: \nwidth:${windowSizeClass.windowWidthSizeClass}\nheight:${windowSizeClass.windowHeightSizeClass}",
             modifier = Modifier.padding(bottom = navigationBarHeightDp * 3, end = 2.dp)
                 .background(Color(0x55ff0000))
                 .padding(8.dp)
