@@ -14,7 +14,17 @@ private val ComposeStateBasicSyntaxExperiment = Experiment(
     topic = ExperimentTopic.Compose,
 )
 
+private val ComposeStateMviManageExperiment = Experiment(
+    id = "compose_state_manage_by_mvi",
+    name = "用 MVI 管理状态",
+    description = "Compose 状态管理",
+    icon = ComposeLogoIcon,
+    page = ::MVIDemo,
+    topic = ExperimentTopic.Compose,
+)
+
 val ComposeStateManageExperiments = listOf(
     ComposeStateBasicSyntaxExperiment,
+    ComposeStateMviManageExperiment,
 )
 
