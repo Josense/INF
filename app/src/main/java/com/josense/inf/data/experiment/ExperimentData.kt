@@ -1,11 +1,7 @@
 package com.josense.inf.data.experiment
 
-import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutBoxExperiment
-import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutFlowExperiment
-import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutLazyGridExperiment
-import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutLazyListExperiment
-import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutRowColumnExperiment
-import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutScaffoldExperiment
+import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutExperiments
+import com.josense.inf.topic.compose.state.ComposeStateManageExperiments
 import com.josense.inf.topic.crossplatform.rn.ReactNativeExperiment
 import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperiment
 import com.josense.inf.topic.thirdpartylibrary.enrichedmarkdown.EnrichedMarkdownExperiment
@@ -14,18 +10,16 @@ import com.josense.inf.topic.uirender.custom_view.CustomViewExperiment
 import com.josense.inf.topic.viewmodel.internals.ViewModelInternalsExperiment
 import com.josense.inf.topic.viewmodel.lifecycles.ViewModelLifecycleExperiment
 import com.josense.inf.topic.viewmodel.savedstatehandle.ViewModelSavedStateHandleExperiment
-
+import kotlin.to
 
 
 val ExperimentsData: Map<String, Map<String, Experiment>> = mapOf(
-    ExperimentTopic.Compose.topicName to mapOf(
-        ComposeBasicLayoutBoxExperiment.id to ComposeBasicLayoutBoxExperiment,
-        ComposeBasicLayoutRowColumnExperiment.id to ComposeBasicLayoutRowColumnExperiment,
-        ComposeBasicLayoutFlowExperiment.id to ComposeBasicLayoutFlowExperiment,
-        ComposeBasicLayoutLazyListExperiment.id to ComposeBasicLayoutLazyListExperiment,
-        ComposeBasicLayoutLazyGridExperiment.id to ComposeBasicLayoutLazyGridExperiment,
-        ComposeBasicLayoutScaffoldExperiment.id to ComposeBasicLayoutScaffoldExperiment,
-    ),
+    ExperimentTopic.Compose.topicName to mutableMapOf<String, Experiment>().apply {
+        // 基本布局
+        ComposeBasicLayoutExperiments.forEach { this[it.id] = it }
+        // 状态管理
+        ComposeStateManageExperiments.forEach { this[it.id] = it }
+    },
     ExperimentTopic.ViewModel.topicName to mapOf(
         ViewModelLifecycleExperiment.id to ViewModelLifecycleExperiment,
         ViewModelSavedStateHandleExperiment.id to ViewModelSavedStateHandleExperiment,

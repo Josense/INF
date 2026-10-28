@@ -58,6 +58,15 @@ val ComposeBasicLayoutScaffoldExperiment = Experiment(
     topic = ExperimentTopic.Compose
 )
 
+val ComposeBasicLayoutExperiments = listOf(
+    ComposeBasicLayoutBoxExperiment,
+    ComposeBasicLayoutRowColumnExperiment,
+    ComposeBasicLayoutFlowExperiment,
+    ComposeBasicLayoutLazyListExperiment,
+    ComposeBasicLayoutLazyGridExperiment,
+    ComposeBasicLayoutScaffoldExperiment,
+)
+
 
 
 
