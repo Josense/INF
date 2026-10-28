@@ -39,6 +39,9 @@
         <service android:name=".tools.activitydetect.FloatingWindowService"
             android:enabled="true"
             android:exported="false" />
+        <activity android:name=".tools.windowparams.WindowParamsDetectActivity"
+            android:theme="@style/Theme.INF"
+            android:exported="false"/>
     </application>
 
 </manifest>

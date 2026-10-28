@@ -40,6 +40,9 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.compose.material3.adaptive)
+    implementation(libs.androidx.compose.material3.window.size.class1)
+
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlin.parcelize.runtime)
     implementation(libs.kotlin.serialization.json)
