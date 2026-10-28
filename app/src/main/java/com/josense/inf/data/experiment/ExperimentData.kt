@@ -1,6 +1,7 @@
 package com.josense.inf.data.experiment
 
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutExperiments
+import com.josense.inf.topic.compose.modifier.ComposeModifierExperiments
 import com.josense.inf.topic.compose.state.ComposeStateManageExperiments
 import com.josense.inf.topic.crossplatform.rn.ReactNativeExperiment
 import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperiment
@@ -19,6 +20,8 @@ val ExperimentsData: Map<String, Map<String, Experiment>> = mapOf(
         ComposeBasicLayoutExperiments.forEach { this[it.id] = it }
         // 状态管理
         ComposeStateManageExperiments.forEach { this[it.id] = it }
+        // Modifier
+        ComposeModifierExperiments.forEach { this[it.id] = it }
     },
     ExperimentTopic.ViewModel.topicName to mapOf(
         ViewModelLifecycleExperiment.id to ViewModelLifecycleExperiment,
