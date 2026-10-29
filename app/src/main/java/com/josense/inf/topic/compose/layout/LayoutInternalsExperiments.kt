@@ -26,7 +26,27 @@ val ComposeLayoutInternalsSizeAndPositionExperiment = Experiment(
     topic = ExperimentTopic.Compose
 )
 
+val ComposeLayoutInternalsNestedLazyLayoutExperiment = Experiment(
+    id = "compose_layout_internals_nested_lazy_layout",
+    name = "Nested Lazy Layout",
+    description = "Compose 布局阶段原理",
+    icon = ComposeLogoIcon,
+    page = ::NestedLazyLayoutDemo,
+    topic = ExperimentTopic.Compose
+)
+
+val ComposeLayoutInternalsCustomLayoutExperiment = Experiment(
+    id = "compose_layout_internals_custom_Layout",
+    name = "Custom Layout",
+    description = "Compose 布局阶段原理",
+    icon = ComposeLogoIcon,
+    page = ::CustomLayoutDemo,
+    topic = ExperimentTopic.Compose
+)
+
 val LayoutInternalsExperiments = listOf(
     ComposeLayoutInternalsConstraintsExperiment,
     ComposeLayoutInternalsSizeAndPositionExperiment,
+    ComposeLayoutInternalsNestedLazyLayoutExperiment,
+    ComposeLayoutInternalsCustomLayoutExperiment,
 )
