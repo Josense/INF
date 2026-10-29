@@ -47,6 +47,10 @@
         <activity
             android:name=".topic.crossplatform.rn.INFReactActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".topic.compose.layout.SizeAndPositionDemoActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

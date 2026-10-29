@@ -36,6 +36,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.layout
+import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.layout.positionInRoot
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.Density
@@ -48,7 +50,9 @@ fun ConstraintsDemo() {
     Column(
         modifier = Modifier.padding(top = 30.dp).fillMaxSize()
             .border(2.dp, Color.Red)
-
+            .onGloballyPositioned {
+                it.positionInRoot()
+            }
     ) {
 
         val density: Density = LocalDensity.current
