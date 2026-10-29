@@ -1,6 +1,8 @@
 package com.josense.inf.data.experiment
 
+import android.os.Build
 import com.josense.inf.topic.compose.basiclayout.ComposeBasicLayoutExperiments
+import com.josense.inf.topic.compose.layout.LayoutInternalsExperiments
 import com.josense.inf.topic.compose.modifier.ComposeModifierExperiments
 import com.josense.inf.topic.compose.state.ComposeStateManageExperiments
 import com.josense.inf.topic.crossplatform.rn.ReactNativeExperiment
@@ -16,12 +18,16 @@ import kotlin.to
 
 val ExperimentsData: Map<String, Map<String, Experiment>> = mapOf(
     ExperimentTopic.Compose.topicName to mutableMapOf<String, Experiment>().apply {
-        // 基本布局
-        ComposeBasicLayoutExperiments.forEach { this[it.id] = it }
-        // 状态管理
-        ComposeStateManageExperiments.forEach { this[it.id] = it }
-        // Modifier
-        ComposeModifierExperiments.forEach { this[it.id] = it }
+        buildList {
+            // 基本布局
+            addAll(ComposeBasicLayoutExperiments)
+            // 状态管理
+            addAll(ComposeStateManageExperiments)
+            // Modifier
+            addAll(ComposeModifierExperiments)
+            // 布局原理
+            addAll(LayoutInternalsExperiments)
+        }.reversed().forEach { this[it.id] = it }
     },
     ExperimentTopic.ViewModel.topicName to mapOf(
         ViewModelLifecycleExperiment.id to ViewModelLifecycleExperiment,
