@@ -6,6 +6,7 @@ import com.josense.inf.topic.compose.layout.LayoutInternalsExperiments
 import com.josense.inf.topic.compose.modifier.ComposeModifierExperiments
 import com.josense.inf.topic.compose.state.ComposeStateManageExperiments
 import com.josense.inf.topic.compose.touchevent.TouchEventExperiments
+import com.josense.inf.topic.concurrency.ConcurrencyExperiments
 import com.josense.inf.topic.crossplatform.rn.ReactNativeExperiment
 import com.josense.inf.topic.ipc.broadcast.ImplicitBroadcastsExperiment
 import com.josense.inf.topic.thirdpartylibrary.enrichedmarkdown.EnrichedMarkdownExperiment
@@ -31,6 +32,9 @@ val ExperimentsData: Map<String, Map<String, Experiment>> = mapOf(
             // 触控交互
             addAll(TouchEventExperiments)
         }.reversed().forEach { this[it.id] = it }
+    },
+    ExperimentTopic.Concurrency.topicName to mutableMapOf<String, Experiment>().apply {
+        ConcurrencyExperiments.reversed().forEach { this[it.id] = it }
     },
     ExperimentTopic.ViewModel.topicName to mapOf(
         ViewModelLifecycleExperiment.id to ViewModelLifecycleExperiment,

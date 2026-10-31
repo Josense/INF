@@ -68,6 +68,8 @@ dependencies {
     // material icon
     implementation(libs.androidx.compose.material.icons.core)
     implementation(libs.androidx.compose.material.icons.extended)
+    // 图片颜色分析
+    implementation(libs.androidx.palette)
     //
     implementation(libs.androidx.compose.material3.adaptive.navigation.suite)
     // koin
