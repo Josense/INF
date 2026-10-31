@@ -51,6 +51,12 @@
         <activity
             android:name=".topic.compose.layout.SizeAndPositionDemoActivity"
             android:exported="false" />
+
+        <activity android:name=".topic.concurrency.coroutine.callbackconvert.BiometricActivity"
+            android:exported="false"
+            android:theme="@style/Theme.INFCompat"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
     </application>
 
 </manifest>

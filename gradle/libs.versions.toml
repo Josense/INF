@@ -26,6 +26,10 @@ coilCompose = "3.6.3"
 # 图片颜色分析
 palette = "1.1.0"
 
+# biometric
+biometric = "1.1.0"
+appcompat = "1.7.0"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -79,6 +83,10 @@ androidx-compose-material3-adaptive-navigation-suite = { group = "androidx.compo
 # 图片加载
 coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
 coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coilCompose" }
+
+# biometric
+androidx-biometric = { group = "androidx.biometric", name = "biometric", version.ref = "biometric" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 
 
 
