@@ -6,6 +6,7 @@ import com.josense.inf.data.experiment.ExperimentTopic
 import com.josense.inf.topic.concurrency.coroutine.CoroutineBasicExperimentDemo
 import com.josense.inf.topic.concurrency.coroutine.CoroutineCancellationExperiment2Demo
 import com.josense.inf.topic.concurrency.coroutine.CoroutineCancellationExperimentDemo
+import com.josense.inf.topic.concurrency.coroutine.FlowDemo
 import com.josense.inf.topic.concurrency.coroutine.KotlinIcon
 import com.josense.inf.topic.concurrency.coroutine.callbackconvert.BiometricActivity
 
@@ -46,9 +47,19 @@ val CoroutineCallbackConvertExperiment = Experiment(
     topic = ExperimentTopic.Concurrency,
 )
 
+val CoroutineFlowExperiment = Experiment(
+    id = "concurrency_coroutine_flow",
+    name = "Flow 的基础使用",
+    description = "Android 中的并发",
+    icon = KotlinIcon,
+    page = ::FlowDemo,
+    topic = ExperimentTopic.Concurrency,
+)
+
 val ConcurrencyExperiments = listOf(
     CoroutineBasicExperiment,
     CoroutineCancellationExperiment,
     CoroutineCancellationExperiment2,
     CoroutineCallbackConvertExperiment,
+    CoroutineFlowExperiment,
 )
